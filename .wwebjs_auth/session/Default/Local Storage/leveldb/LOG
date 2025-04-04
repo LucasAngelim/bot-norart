@@ -1,2 +1,3 @@
-2025/04/04-16:37:35.684 13a8 Creating DB C:\Bot-Norart\.wwebjs_auth\session\Default\Local Storage\leveldb since it was missing.
-2025/04/04-16:37:35.702 13a8 Reusing MANIFEST C:\Bot-Norart\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
+2025/04/04-17:04:13.618 7834 Reusing MANIFEST C:\Bot-Norart\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
+2025/04/04-17:04:13.619 7834 Recovering log #3
+2025/04/04-17:04:13.619 7834 Reusing old log C:\Bot-Norart\.wwebjs_auth\session\Default\Local Storage\leveldb/000003.log 
