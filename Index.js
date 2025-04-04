@@ -32,6 +32,7 @@ client.on('message', async (msg) => {
         return;
     }
 
+    console.log(`📩 Mensagem privada recebida de ${msg.from}: ${msg.body}`);
      
     const hora = new Date().getHours();
     if (hora < 8 || hora >= 18) {
