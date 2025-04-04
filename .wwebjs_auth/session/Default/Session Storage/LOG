@@ -1,2 +1,3 @@
-2025/04/03-16:41:25.309 7538 Creating DB C:\Bot-Norart\.wwebjs_auth\session\Default\Session Storage since it was missing.
-2025/04/03-16:41:25.318 7538 Reusing MANIFEST C:\Bot-Norart\.wwebjs_auth\session\Default\Session Storage/MANIFEST-000001
+2025/04/04-14:39:40.972 2ca0 Reusing MANIFEST C:\Bot-Norart\.wwebjs_auth\session\Default\Session Storage/MANIFEST-000001
+2025/04/04-14:39:40.973 2ca0 Recovering log #3
+2025/04/04-14:39:40.973 2ca0 Reusing old log C:\Bot-Norart\.wwebjs_auth\session\Default\Session Storage/000003.log 

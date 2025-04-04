@@ -5,14 +5,14 @@ const client = new Client({
     authStrategy: new LocalAuth(),
 });
 
-const NUMERO_VIDROS = '556181278613@c.us';  
-const NUMERO_MOLDURAS = '5561996879550@c.us'; 
+const NUMERO_VIDROS = '556181532529@c.us';  
+const NUMERO_MOLDURAS = '556183523174@c.us'; 
 
 const sessions = {};
 const lastInteraction = {}; 
 
 
-const TEMPO_LIMITE = 6 * 60 * 60 * 1000; 
+const TEMPO_LIMITE = 8 * 60 * 60 * 1000; 
 
 client.on('qr', (qr) => {
     console.log('QR Code gerado, escaneie com seu WhatsApp!');
@@ -66,7 +66,9 @@ client.on('message', async (msg) => {
             client.sendMessage(userId, 'Você escolheu **Vidros**! Um atendente entrará em contato com você em breve. 📞');
 
             
-            client.sendMessage(NUMERO_VIDROS, `🔔 Novo atendimento!\n👤 Cliente: ${sessions[userId].nome}\n📞 Número: ${userId}`);
+            const numeroLimpo = userId.replace('@c.us', '');
+            client.sendMessage(NUMERO_VIDROS, `🔔 Novo atendimento!\n👤 Cliente: ${sessions[userId].nome}\n📞 Número: ${numeroLimpo}`);
+
 
             lastInteraction[userId] = agora; 
             delete sessions[userId]; 
@@ -78,7 +80,8 @@ client.on('message', async (msg) => {
 
             
             if (NUMERO_MOLDURAS !== client.info.wid._serialized) {
-                client.sendMessage(NUMERO_MOLDURAS, `🔔 Novo atendimento!\n👤 Cliente: ${sessions[userId].nome}\n📞 Número: ${userId}`);
+                const numeroLimpo = userId.replace('@c.us', '');
+                client.sendMessage(NUMERO_MOLDURAS, `🔔 Novo atendimento!\n👤 Cliente: ${sessions[userId].nome}\n📞 Número: ${numeroLimpo}`);                
             }
 
             lastInteraction[userId] = agora; 
