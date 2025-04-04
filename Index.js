@@ -3,7 +3,10 @@ const qrcode = require('qrcode-terminal');
 
 const client = new Client({
     authStrategy: new LocalAuth(),
-});
+    puppeteer: {
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
+    }
+  });
 
 const NUMERO_VIDROS = '556181532529@c.us';  
 const NUMERO_MOLDURAS = '556183523174@c.us'; 
