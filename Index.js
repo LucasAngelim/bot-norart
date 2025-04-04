@@ -51,7 +51,7 @@ client.on('message', async (msg) => {
     
     if (!sessions[userId]) {
         sessions[userId] = { step: 1 };
-        client.sendMessage(userId, 'Olá, bem-vindo à Norart Vidros e Molduras! Para iniciar seu atendimento, favor me informe seu nome.');
+        client.sendMessage(userId, 'Seja bem-vindo à Norart Vidros e Molduras! Para iniciar seu atendimento, favor me informe seu nome.');
         return;
     }
 
