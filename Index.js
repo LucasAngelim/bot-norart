@@ -31,6 +31,11 @@ client.on('message', async (msg) => {
         console.log('Mensagem de grupo ignorada:', msg.from);
         return;
     }
+    
+    if (msg.body.toLowerCase().includes('ligação de voz')) {
+        console.log(`⚠️ Ignorada mensagem automática de ligação de voz de ${msg.from}`);
+        return;
+    }
 
     console.log(`📩 Mensagem privada recebida de ${msg.from}: ${msg.body}`);
      
