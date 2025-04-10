@@ -1,3 +1,7 @@
-node_modules
-.wwebjs_cache
-.env
+node_modules/
+.wwebjs_cache/
+.wwebjs_auth/*/Default/Cache/
+.wwebjs_auth/*/Default/Code Cache/
+.wwebjs_auth/*/Default/GPUCache/
+.wwebjs_auth/*/Default/DevToolsActivePort
+.wwebjs_auth/*/Default/chrome_debug.log
